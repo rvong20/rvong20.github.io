@@ -1,0 +1,371 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #dad7cd;
+}
+.japanheader {
+    background-image: url(images/japanseasons.jpg);
+    background-size: contain;        
+    background-position: center;     
+    background-repeat: no-repeat;    
+    height: 200px;                   
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+}
+
+.springheader {
+    background-image: url(images/spring.jpg);
+    background-size: cover;         
+    background-position: center;    
+    background-repeat: no-repeat;   
+    height: 200px;                                  
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+}
+
+.summerheader {
+    background-image: url(images/summer.jpg);
+    background-size: cover;         
+    background-position: center;    
+    background-repeat: no-repeat;   
+    height: 200px;                                  
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+}
+
+.fallheader {
+    background-image: url(images/autumn.jpg);
+    background-size: cover;         
+    background-position: center;    
+    background-repeat: no-repeat;   
+    height: 200px;                                  
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+}
+
+.winterheader {
+    background-image: url(images/winter.jpg);
+    background-size: cover;         
+    background-position: center;    
+    background-repeat: no-repeat;   
+    height: 200px;                                  
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+}
+
+body#spring {
+    background-color: #f9edbf;
+}
+body#summer {
+    background-color: #faf0c8;
+}
+body#fall {
+    background-color: #f7f0e5;
+}
+
+body#winter {
+    background-color: #e6f5f6;
+}
+
+#wrap {
+    width: 80%;
+    margin: 0 auto;
+}
+
+header, nav, section, footer {
+    padding: 2%;
+    margin: 2%;
+    background-color:#a3b18a;
+}
+
+header, footer {
+    background-color: #344e41;
+    text-align: center;
+    color: white;
+    font-family: Georgia, serif;
+}
+
+#spring header, #spring footer {
+    background-color: #fa7756;
+}
+
+#summer header, #summer footer {
+    background-color: #99a708;
+}
+
+#fall header, #fall footer {
+    background-color: #f9be0d;
+    color: #6f4f26;
+}
+
+#winter header, #winter footer {
+    background-color: #7d9097;
+    color: white;
+}
+#spring section {
+    background-color: #b8e9ad;
+}
+
+#summer section {
+    background-color: #fbd97b;
+}
+
+#fall section {
+    background-color: #b96e09;
+}
+
+#winter section {
+    background-color: #aac0cb;
+}
+
+nav {
+    background-color: #588157;
+    text-align: center;
+    font-size: x-large;
+    padding: 14px; 
+}
+
+#spring nav {
+    background-color: #fa7756;
+    color: white;
+}
+
+#summer nav {
+    background-color: #99a708;
+    color: white;
+}
+
+#fall nav {
+    background-color: #f9be0d;
+}
+
+#winter nav {
+    background-color: #7d9097;
+}
+#spring nav a {
+    color: white;
+}
+
+#summer nav a {
+    color: white;
+}
+
+#fall nav a {
+    color: #6f4f26;   
+}
+
+#winter nav a {
+    color: white;
+}
+
+#spring nav a:hover {
+    color: #f9edbf;
+    background-color: #71c87d;
+}
+
+#summer nav a:hover {
+    color: #f9edbf;
+    background-color: #e44331;
+}
+
+#fall nav a:hover {
+    color: white;
+    background-color: #8c5921;
+}
+
+#winter nav a:hover {
+    background-color: #d1f0f3;
+    color: black;
+}
+nav ul {
+    margin:0;
+    padding:0;
+}
+
+nav li {
+    display: inline;
+}
+
+nav a {
+    color: #dad7cd;
+    text-decoration: none;
+    padding: 15px 25px;
+}
+
+nav a:hover {
+    color: white;
+    background-color: #344e41;
+}
+
+.column {
+    width: 48%;
+    float: left;
+    margin: 1%;
+    background-color: #dad7cd;
+    padding: 10px;
+    box-sizing: border-box;
+    text-align: center;
+    border: 1px solid #dad7cd;
+}
+
+.column:hover {
+    background-color: #344e41;
+}
+
+.column:hover figcaption {
+    color: #dad7cd;
+}
+
+.container::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.column img {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    display: block;
+    box-sizing: border-box;
+}
+
+figure img {
+    width: 100%;
+    height: 300px;
+}
+
+a {
+    text-decoration: none;
+    color: #344e41;
+}
+
+figcaption {
+    text-align: center;
+    font-size: 50px;
+    margin-top: 1%;
+    color: #344e41;
+    font-family: Georgia, serif;
+}
+
+#spring {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 10px 15px;
+    margin: 20px 0;
+}
+
+#spring figure {
+    background-color:#fa7756;
+    text-align: center;
+    border: 1px solid white;
+    padding: 1%;
+    margin: 1%;
+    flex: 0 1 calc(33.333% - 2%);
+    box-sizing: border-box;
+}
+
+#spring figcaption {
+    color: white;
+    font-family: Arial, sans-serif;
+    font-size: 90%;
+    margin-top: 1%;
+}
+
+#summer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 10px 15px;
+    margin: 20px 0;
+}
+
+#summer figure {
+    background-color: #99a708;
+    text-align: center;
+    border: 1px solid white;
+    padding: 1%;
+    margin: 1%;
+    flex: 0 1 calc(33.333% - 2%);
+    box-sizing: border-box;
+}
+
+#summer figcaption {
+    color: white;
+    font-family: Arial, sans-serif;
+    font-size: 90%;
+    margin-top: 1%;
+}
+
+#fall {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 10px 15px;
+    margin: 20px 0;
+}
+
+#fall figure {
+    background-color: #f0a51b;
+    text-align: center;
+    border: 1px solid white;
+    padding: 1%;
+    margin: 1%;
+    flex: 0 1 calc(33.333% - 2%);
+    box-sizing: border-box;
+}
+
+#fall figcaption {
+    color: #6f4f26;
+    font-family: Arial, sans-serif;
+    font-size: 90%;
+    margin-top: 1%;
+}
+
+#winter {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 10px 15px;
+    margin: 20px 0;
+}
+
+#winter figure {
+    background-color:#7d9097;
+    text-align: center;
+    border: 1px solid white;
+    padding: 1%;
+    margin: 1%;
+    flex: 0 1 calc(33.333% - 2%);
+    box-sizing: border-box;
+}
+
+#winter figcaption {
+    color: white;
+    font-family: Arial, sans-serif;
+    font-size: 90%;
+    margin-top: 1%;
+}
+
+
