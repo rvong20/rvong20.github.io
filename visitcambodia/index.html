@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Visit Cambodia - The Kingdom of Wonder</title>
+    <link href="cambodia.css" type="text/css" rel="stylesheet">
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-TW5D8R84YF"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-TW5D8R84YF');
+    </script>
+</head>
+<body id="home">
+    <div id="wrap">
+        <header>
+            <div class="video-container">
+                <video autoplay muted loop>
+                    <source src="video/cambodia.mp4" type="video/mp4">
+                </video>
+            </div>
+            <div class="header-text">THE KINGDOM OF WONDER</div>
+        </header>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="history.html">History</a>
+            <a href="tourism.html">Tourism</a>
+            <a href="food.html">Food</a>
+            <a href="todo.html">Things To Do</a>
+        </nav>
+        
+        <section>
+            <div id="about" class="about">
+                <h1>THIS IS CAMBODIA</h1>
+                <p>Cambodia is a land where ancient traditions meet the vibrant pulse of modern life, where the grandeur of history stands side by side with the energy of the present. From the mystical ruins of Angkor to the bustling streets of Phnom Penh, Cambodia offers a journey through time, culture, and natural beauty that’s as diverse as it is unforgettable.</p>
+
+                <p>For centuries, the Khmer Empire flourished here, leaving behind some of the world’s most awe-inspiring architecture and a deep cultural heritage. The temples of Angkor, the riverside towns, and the peaceful countryside speak to a history of resilience and grace, from the Angkorian kings to the vibrant communities of today.</p>
+
+                <p>Cambodia is more than just its past. It’s a country where smiles are as warm as the sun and hospitality runs deep in every corner. From the tranquil beaches of Sihanoukville to the lively markets of Siem Reap, every experience here is rich with flavor, color, and spirit. We’re humble yet proud, traditional yet contemporary. We don’t try to be anything else—just true to who we are.</p>
+
+                <p>Come, explore Cambodia, and discover a place where every moment feels like a connection to something deeper.</p>
+            </div>
+
+            <div id="location" class="location">
+                <h1>WHERE IS CAMBODIA?</h1>
+                <div class='embed-container'><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4930480.113889336!2d102.34130336954618!3d12.13292036247825!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x310787bfd4dc3743%3A0xe4b7bfe089f41253!2sCambodia!5e1!3m2!1sen!2sus!4v1733794974257!5m2!1sen!2sus" width="800" height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
+            </div>
+            
+            <div id="fun-fact" class="fun-fact">
+                <h1>FUN FACT</h1>
+                <div class="fun-fact-content">
+                    <img src="img/cambodiamap.jpg" alt="Cambodia Map" class="cambodiamap">
+                    <p>Cambodia is the same size as Oklahoma.</p>
+                    <img src="img/oklahoma.jpg" alt="Oklahoma" class="oklahoma">
+                </div>
+            </div>
+            <div class="recentnews">
+                <h1>RECENT NEWS</h1>
+                <div class="news">
+                    <div class="gumball3000video">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/U-s_2tNumaA?si=gY1mDsDAJYIbUbUu" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        <iframe src="https://www.facebook.com/plugins/video.php?height=315&href=https%3A%2F%2Fwww.facebook.com%2FDr.Hunmanetofcambodia%2Fvideos%2F1578680076340549%2F&show_text=false&width=560&t=0" width="560" height="315" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" allowFullScreen="true"></iframe>
+                    </div>
+                    <div class="guinness">
+                        <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fgumball3000%2Fposts%2Fpfbid02mmwk7CgLyCcRx2oqx2aZ68QykpdJyxv4Vm5b5AA2SopNWTFQ91ZDFjtEJsTQ4ZBxl&show_text=true&width=500" width="500" height="717" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+                    </div>
+                </div>
+            </div>
+            <div class="form">
+                <h2>Book Your Trip</h2>
+                <p>Please fill out the form below to plan your journey.</p>
+                <form class="booking-form" onsubmit="handleFormSubmit(event)">
+                    <input type="text" name="fullName" placeholder="Your Full Name" required>
+                    <label for="dob">Date of Birth:</label>
+                    <input type="date" id="dob" name="dob" required>
+                    <input type="email" name="email" placeholder="Your Email Address" required>
+                    <input type="tel" name="phone" placeholder="Your Phone Number" required>
+
+                    <label for="start-date">Starting Date of Trip:</label>
+                    <input type="date" id="start-date" name="startDate" required>
+
+                    <label for="end-date">Ending Date of Trip:</label>
+                    <input type="date" id="end-date" name="endDate" required>
+
+                    <fieldset>
+                        <legend>Select Destinations:</legend>
+                            <label><input type="checkbox" name="destination" value="Angkor Wat"> Angkor Wat</label><br>
+                            <label><input type="checkbox" name="destination" value="Sihanoukville"> Sihanoukville</label><br>
+                            <label><input type="checkbox" name="destination" value="Phnom Penh"> Phnom Penh</label><br>
+                            <label><input type="checkbox" name="destination" value="Siem Reap"> Siem Reap</label><br>
+                            <label><input type="checkbox" name="destination" value="Tonle Sap"> Tonle Sap</label><br>
+                            <label><input type="checkbox" name="destination" value="Kampot"> Kampot</label><br>
+                            <label><input type="checkbox" name="destination" value="Battambang"> Battambang</label><br>
+                            <label><input type="checkbox" name="destination" value="Koh Rong"> Koh Rong</label><br>
+                            <label><input type="checkbox" name="destination" value="Kratie"> Kratie</label><br>
+                            <label><input type="checkbox" name="destination" value="Preah Vihear"> Preah Vihear</label><br>
+                            <label><input type="checkbox" name="destination" value="Ratanakiri"> Ratanakiri</label>
+                    </fieldset>
+                    <textarea name="reason" placeholder="Reason for Travel (e.g., Leisure, Business, Education)" rows="3" required></textarea>
+                    <textarea name="specialRequests" placeholder="Special Requests (Dietary needs, accessibility, etc.)" rows="3"></textarea>
+
+                    <button type="submit">Submit</button>
+                </form>
+            </div>
+            <script>
+                function handleFormSubmit(event) {
+                    event.preventDefault();
+                    const formData = new FormData(event.target);
+                    const queryParams = new URLSearchParams();
+                    formData.forEach((value, key) => queryParams.append(key, value));
+                    window.location.href = `confirmation.html?${queryParams.toString()}`;
+                }
+            </script>
+
+        </section>
+        
+        <footer>
+            <p>&copy; 2024 Visit Cambodia. All Rights Reserved.</p>
+        </footer>
+    </div>
+</body>
+</html>

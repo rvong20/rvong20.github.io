@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Confirmation Page</title>
+    <link rel="stylesheet" href="cambodia.css">
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-TW5D8R84YF"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-TW5D8R84YF');
+    </script>
+</head>
+<body id="confirmation">
+    <div class="form">
+        <h2>Confirmation</h2>
+        <p>Thank you for your submission. Here are the details you provided:</p>
+        <ul id="confirmation-details"></ul>
+        <div class="back">
+        <a href="index.html" class="button">Back to Home Page</a>
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const params = new URLSearchParams(window.location.search);
+            const detailsList = document.getElementById('confirmation-details');
+
+            const fieldNames = {
+                "fullName": "Full Name",
+                "dob": "Date of Birth",
+                "email": "Email Address",
+                "phone": "Phone Number",
+                "startDate": "Trip Start Date",
+                "endDate": "Trip End Date",
+                "destination": "Selected Destinations",
+                "reason": "Reason for Travel",
+                "specialRequests": "Special Requests"
+            };
+
+            const groupedData = {};
+            params.forEach((value, key) => {
+                if (key === "destination") {
+                    if (!groupedData[key]) groupedData[key] = [];
+                    groupedData[key].push(value);
+                } else {
+                    groupedData[key] = value;
+                }
+            });
+
+            Object.keys(fieldNames).forEach((key) => {
+                const listItem = document.createElement('li');
+                const label = fieldNames[key];
+                const value = Array.isArray(groupedData[key]) ? groupedData[key].join(", ") : groupedData[key] || "Not provided";
+                listItem.textContent = `${label}: ${value}`;
+                detailsList.appendChild(listItem);
+            });
+        });
+    </script>
+</body>
+</html>

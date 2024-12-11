@@ -1,0 +1,617 @@
+@import url('https://fonts.googleapis.com/css2?family=Bevan:ital@0;1&family=Oswald:wght@200..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Satisfy&display=swap');
+body {
+    margin: 0;
+    padding: 0;
+    background-color: darkgray;
+    color: #333;
+}
+
+#wrap {
+    width: 80%;
+    margin: 0 auto;
+    background-color: #fff8e1;
+}
+
+header {
+    position: relative;
+    height: 400px;
+    background-color: black;
+    padding: 0;
+    text-align: center;
+    overflow: hidden;
+}
+
+header .video-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+
+
+header video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.8;
+}
+
+header .header-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 50px;
+    color: white;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+    font-weight: bold;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    background-color: #d4af37;
+    font-size: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+    padding: 15px 20px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    background-color: #8c1a1a;
+    color: #fff;
+}
+
+section {
+    padding: 20px;
+}
+
+.about {
+    background-color: white;
+    padding: 30px;
+    text-align: center;
+}
+
+.about h1 {
+    color: #8c1a1a;
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+
+.about p {
+    color: #333;
+    font-size: 14px;
+    margin: 20px 0;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 1.6;
+}
+
+.location {
+    text-align: center;
+    padding: 30px;
+}
+
+.location h1 {
+    color: #8c1a1a;
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+
+h1, h2 {
+    color: #8c1a1a;
+}
+.fun-fact {
+    background-color: white;
+    padding: 30px;
+    text-align: center;
+}
+
+.fun-fact h1 {
+    font-size: 50px;
+}
+
+.fun-fact-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+
+.fun-fact-content img {
+    width: 400px;
+    height: 300px;
+    object-fit: contain;
+}
+
+.fun-fact-content p {
+    font-size: 18px;
+    color: #333;
+    margin: 0;
+    width: 300px;
+    text-align: center;
+    line-height: 1.5;
+}
+
+.recentnews {
+    padding: 30px;
+}
+
+.recentnews h1 {
+    font-size: 50px;
+    text-align: center;
+}
+
+.news {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.gumball3000video {
+    margin-left: 5%;
+}
+
+.guinness {
+    margin-right: 5%;
+}
+
+.embed-container {
+    position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; 
+}
+
+.embed-container iframe, .embed-container object, .embed-container embed { 
+    position: absolute; top: 0; left: 0; width: 100%; height: 100%; 
+}
+
+
+footer {
+    background-color: #8c1a1a;
+    color: #fff;
+    text-align: center;
+    padding: 10px; 
+    margin: 0 auto;
+    position: relative;
+}
+
+.form {
+    background-color: #f9f9f9;
+    border: 2px solid #8c1a1a;
+    border-radius: 10px;
+    padding: 30px;
+    width: 80%;
+    margin: 30px auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.form h2 {
+    text-align: center;
+    color: #8c1a1a;
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.form p {
+    text-align: center;
+    color: #555;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.booking-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.booking-form input,
+.booking-form textarea,
+.booking-form select,
+.booking-form fieldset {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+.booking-form input:focus,
+.booking-form textarea:focus {
+    border-color: #8c1a1a;
+}
+
+.booking-form label {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.booking-form textarea {
+    resize: none;
+}
+
+.booking-form button {
+    background-color: #8c1a1a;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 12px 20px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.booking-form button:hover {
+    background-color: #d4af37;
+}
+
+#confirmation ul {
+    font-size: 20px;
+}
+
+#confirmation li {
+    margin: 2% 0;
+}
+
+#confirmation .back{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#confirmation .button {
+    text-decoration: none;
+    background-color: #8c1a1a;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 12px 20px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#confirmation a:hover{
+    background-color: #d4af37;
+}
+
+#todo h1 {
+    font-size: 50px;
+    text-align: center;
+    padding: 1%;
+}
+
+#todo .column {
+    width: 48%;
+    float: left;
+    margin: 1%;
+    background-color: #8c1a1a;
+    padding: 10px;
+    box-sizing: border-box;
+    text-align: center;
+    border: 1px solid #dad7cd;
+}
+
+#todo .column:hover {
+    background-color: #d4af37;
+}
+
+#todo .column:hover figcaption {
+    color: white;
+}
+
+#todo .container::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+#todo .column img {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    display: block;
+    box-sizing: border-box;
+}
+
+#todo figure img {
+    width: 100%;
+    height: 300px;
+}
+
+#todo a {
+    text-decoration: none;
+    color: #344e41;
+}
+
+#todo figcaption {
+    text-align: center;
+    font-size: 150%;
+    margin-top: 1%;
+    color: white;
+    font-family: Georgia, serif;
+}
+
+#todo nav a {
+    color:white;
+}
+
+#todo footer {
+    background-color: #d4af37;
+}
+
+#history .history h1 {
+    text-align: center;
+    font-size: 50px;
+    padding: 1%;
+}
+
+#history .pic {
+    width: 35%;
+    float: right;
+    margin: 0 0 20px 20px;
+}
+#history .pic2 {
+    width: 40%;
+    float: left;
+    margin: 0 20px 20px 0;
+    max-width: 100%;
+}
+
+#history .pic3 {
+    width: 50%;
+    float: right;
+    margin: 0 20px 20px 0;
+}
+#history section {
+    padding: 20px 40px 20px 40px;
+    overflow: auto;
+}
+
+#tourism .tourism {
+    padding-bottom: 30px;
+    text-align: center;
+}
+
+#tourism .tourism h1 {
+    font-size: 50px;
+}
+
+#tourism .tourism p {
+    color: #333;
+    font-size: 20px;
+    margin: 20px 0;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 1.6;
+}
+
+
+#food .foodstory {
+    padding-bottom: 30px;
+    text-align: center;
+}
+
+#food .foodstory h1 {
+    font-size: 50px;
+}
+
+#food .foodstory p {
+    color: #333;
+    font-size: 20px;
+    margin: 20px 0;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 1.6;
+}
+
+#food .food {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 10px;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+#food .food figure {
+    background-color: #d4af37;
+    text-align: center;
+    border: 1px solid white;
+    padding: 10px;
+    margin: 0;
+    box-sizing: border-box;
+    flex: 0 1 calc(33.333% - 20px);
+}
+
+#food .food img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+#food .food figcaption {
+    color: white;
+    font-size: 90%;
+    margin-top: 5px;
+}
+
+#food .reveal-modal img {
+    width: 100%;
+}
+
+#food .video {
+    font-size: 50px;
+    text-align: center;
+    padding: 3%;
+}
+
+@media screen and (min-width:851px) and (max-width:1000px) {
+    nav {
+        background-color: #d4af37;
+        text-align: center;
+        padding: 13px;
+    }
+
+    nav a {
+        color: white;
+        text-decoration: none;
+        padding: 10px 20px;
+        display: inline-block;
+        vertical-align: middle;
+    }
+
+    nav a:hover {
+        background-color: #8c1a1a;
+    }
+    
+    .fun-fact .cambodiamap,
+    .fun-fact .oklahoma {
+        display: block;
+        width: 80%;
+        margin: 0 auto;
+    }
+    #food .food {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    #food .food figure {
+        width: 100%;
+        text-align: center;
+    }
+
+    #food .food img {
+        width: auto;
+        max-width: 100%;
+        height: auto;
+    }
+     #todo .container {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        justify-content: center;
+    }
+
+    #todo .column {
+        flex: 1 1 45%;
+        max-width: 45%;
+    }
+
+    #todo .column figure {
+        width: 100%;
+        max-width: 100%;
+        margin: 0;
+        text-align: center;
+        overflow: hidden;
+    }
+
+    #todo .column img {
+        max-width: 100%;
+        height: auto;
+        display: block;
+    }
+}
+
+@media screen and (max-width:850px) {
+    nav {
+        padding: 0;
+    }
+    
+    #wrap {
+        width: 100%;
+    }
+    
+    body {
+        background-color: white;
+    }
+    
+    nav a {
+        display: block;
+        width: 100%;
+        text-align: center;
+        padding: 20px 0;
+    }
+    
+    .fun-fact-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .fun-fact .cambodiamap,
+    .fun-fact .oklahoma {
+        display: block;
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .recentnews .news {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .recentnews .news iframe {
+        width: 100%;
+    }
+    #food .food {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    #food .food figure {
+        width: 100%;
+        text-align: center;
+    }
+
+    #food .food img {
+        width: auto;
+        max-width: 100%;
+        height: auto;
+    }
+    #todo .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    #todo .column {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    #todo .column figure {
+        width: 100%;
+        max-width: 100%;
+        margin: 0;
+        text-align: center;
+        overflow: hidden;
+    }
+
+    #todo .column img {
+        max-width: 100%;
+        height: auto;
+        display: block;
+    }
+}

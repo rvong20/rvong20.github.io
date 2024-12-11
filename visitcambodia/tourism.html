@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Visit Cambodia - Tourism</title>
+    <link rel="stylesheet" href="themes/default/default.css" type="text/css" media="screen" />
+    <link rel="stylesheet" href="themes/light/light.css" type="text/css" media="screen" />
+    <link rel="stylesheet" href="themes/dark/dark.css" type="text/css" media="screen" />
+    <link rel="stylesheet" href="themes/bar/bar.css" type="text/css" media="screen" />
+    <link rel="stylesheet" href="nivo-slider.css" type="text/css" media="screen" />
+    <link href="cambodia.css" type="text/css" rel="stylesheet">
+    
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-TW5D8R84YF"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-TW5D8R84YF');
+    </script>
+</head>
+<body id="tourism">
+    <div id="wrap">
+        <header>
+            <div class="video-container">
+                <video autoplay muted loop>
+                    <source src="video/cambodia.mp4" type="video/mp4">
+                </video>
+            </div>
+            <div class="header-text">THE KINGDOM OF WONDER</div>
+        </header>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="history.html">History</a>
+            <a href="tourism.html">Tourism</a>
+            <a href="food.html">Food</a>
+            <a href="todo.html">Things To Do</a>
+        </nav>
+        
+        <section>
+            <div id="tourism" class="tourism">
+                <h1>Tourism of Cambodia</h1>
+                <p>The tourism sector in Cambodia is poised for a significant transformation as low season foreign tourist numbers have lagged behind neighbouring countries over the past year.</p>
+
+                <p>The newly established Cambodia Tourism Board, in collaboration with the Tourism Ministry and industry stakeholders, held its inaugural meeting in late July to address challenges and devise a revival plan. The board aims to elevate Cambodia's profile within six to 12 months through roadshows, innovative products, overseas marketing campaigns, and familiarisation trips for travel agents and media, according to online news portal Kiripost.</p>
+
+                <p>“This will include overseas marketing campaigns with a focus on public relations and an expansion of our strategies to attract key target markets,” Minister Sok Soken was quoted as saying.</p>
+            </div>
+                
+            <div class="slider-wrapper theme-default">
+                <div id="slider" class="nivoSlider">
+                    <img src="img/tourism1.jpg" data-thumb="img/tourism1.jpg" alt="" data-transition="slideInLeft" />
+                    <img src="img/tourism2.jpg" data-thumb="img/tourism2.jpg" alt="" data-transition="slideInLeft" />
+                    <img src="img/tourism3.jpg" data-thumb="img/tourism3.jpg" alt="" data-transition="slideInLeft" />
+                    <img src="img/tourism4.jpg" data-thumb="img/tourism4.jpg" alt="" data-transition="slideInLeft" />
+                </div>
+            </div>
+        </section>
+        
+        <footer>
+            <p>&copy; 2024 Visit Cambodia. All Rights Reserved.</p>
+        </footer>
+    </div>
+    <script type="text/javascript" src="scripts/jquery-1.9.0.min.js"></script>
+    <script type="text/javascript" src="jquery.nivo.slider.js"></script>
+    <script type="text/javascript">
+    $(window).load(function() {
+        $('#slider').nivoSlider();
+    });
+    </script>
+</body>
+</html>
